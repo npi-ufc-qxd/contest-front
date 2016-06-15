@@ -1,8 +1,16 @@
 script(src="https://code.jquery.com/jquery-2.1.1.min.js")
-script(src="../js/materialize.js")
+script(src="js/materialize.js")
 script(type="text/javascript" src="http://localhost:35729/livereload.js")
 script(type="text/javascript").
   $(document).ready(function(){
+    //Inicialização dos elementos no JS
+    //Parallax BG
     $('.parallax').parallax();
+    
+    //sideNav
     $(".button-collapse").sideNav();
+    
+    //Tooltips
+    $('.tooltipped').tooltip({delay: 50});
+    
   });

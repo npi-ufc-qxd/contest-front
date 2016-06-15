@@ -1,14 +1,13 @@
-//output:base.html, pretty:true
 doctype html
 html
-  include header.jade
+  include ./jade_componentes/header.jade
   body
-    include nav.jade
+    include ./jade_componentes/nav.jade
     
     div.container.page
       br
       block conteudo
         
     
-    include footer.jade
-    include script.jade
+    include ./jade_componentes/footer.jade
+    include ./jade_componentes/script.jade
