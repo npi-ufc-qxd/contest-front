@@ -1,1 +1,1 @@
-# contest-front
+![alt logotipo](/imgs/logotipo.png)
