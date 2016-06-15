@@ -1,12 +1,7 @@
 //output:admin_ativos.html, pretty: true
 extends base.jade
 block conteudo
-  div.row.right
-    //- a.purple.white-text.darken-4.btn.waves-effect.waves-light(href="#") Listar Eventos Ativos
-    //- a.purple.white-text.darken-4.btn.waves-effect.waves-light(href="#") Listar Eventos Inativos
-    //- a.purple.white-text.darken-4.btn.waves-effect.waves-light(href="#") Cadastrar Novo Evento
-    a.btn-floating.btn-large.waves-effect.waves-light.purple.darken-4.tooltipped(href="#",data-position="top",data-delay="50",data-tooltip="I am tooltip")
-      i.material-icons list
+  include ./jade_componentes/opcoes_admin.jade  
   div.row
     h2 Lista de Eventos Ativos
 
