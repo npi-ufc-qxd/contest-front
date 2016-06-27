@@ -1,0 +1,9 @@
+mixin calendario(titulo, identificador, habilitado)
+  div.col.s3
+    div.card-content
+      span.card-title 
+        = titulo
+      if(habilitado == true)
+        input.datepicker(type="date" id=identificador)
+      else
+        input.datepicker(type="date" id=identificador disabled)
