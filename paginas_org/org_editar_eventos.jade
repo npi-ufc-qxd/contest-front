@@ -1,0 +1,37 @@
+//output:org_editar_eventos.html, pretty:true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade  
+  div.row
+    h2 Editando Dados do Evento
+    
+    form.col.s12
+      div.input-field.col.m8.s12
+        input#nome_evento(type="text")
+        label(for="input_text") Nome do Evento
+      
+      div.input-field.col.m4.s12
+        include ../jade_componentes/org_switch_mixin.jade
+        +switch("Publico", "Privado", true)
+        
+      div.input-field.col.s12
+        textarea#descricao_evento.materialize-textarea
+        label(for="input_text") Descrição do Evento
+        
+      div.row
+        include ../jade_componentes/org_datepicker_mixin.jade
+        +calendario("Prazo de Submissão - Inicial", "prazo_submissao_inicial", true)
+
+        include ../jade_componentes/org_datepicker_mixin.jade
+        +calendario("Prazo de Submissão - Final", "prazo_submissao_final", false)
+        
+        include ../jade_componentes/org_datepicker_mixin.jade
+        +calendario("Prazo de Revisão - Inicial", "prazo_revisao_inicial", false)
+      
+        include ../jade_componentes/org_datepicker_mixin.jade
+        +calendario("Prazo de Revisão  - Final", "prazo_revisao_final", false)
+      
+      div.row
+        a.waves-effect.waves-light.btn.white-text Salvar Detalhes e Ativar
+          i.fa.fa-upload.left(aria-hidden="true")
+          

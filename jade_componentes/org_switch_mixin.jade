@@ -1,0 +1,10 @@
+mixin switch(labelOn, labelOff, desabilitado)
+  div.switch
+    label
+      = labelOn
+      if(desabilitado == true)
+        input(type="checkbox")
+      else 
+        input(type="checkbox" disabled)
+      span.lever
+      = labelOff
