@@ -24,45 +24,24 @@
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="admin_ativos.html">Eventos Ativos</a><a href="admin_inativos.html">Eventos Inativos</a><a href="admin_cadastrar.html">Adicionar Evento</a></div>
+      <div class="row opcoes"><a href="admin_lista_ativos.html">Eventos Ativos</a><a href="admin_lista_inativos.html">Eventos Inativos</a><a href="admin_cadastrar.html">Adicionar Evento</a></div>
       <div class="row">
-        <h2>Lista de Eventos Ativos</h2>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
+        <h2>Adicionar Evento</h2>
+        <form class="col s12">
+          <div class="input-field col m6 s6">
+            <input id="nome_evento" type="text">
+            <label for="input_text">Nome do Evento</label>
           </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
+          <div class="input-field col m6 s6">
+            <select id="pessoas_select" name="Pessoas">
+              <option value="" disabled selected>Selecione uma pessoa</option>
+              <option value="1">pessoa 1</option>
+              <option value="2">pessoa 2</option>
+            </select>
+            <label for="pessoas_select">Organizador do Evento</label>
           </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
-          </div>
-        </div>
+          <div class="input-field col s4"><a class="waves-effect waves-light btn white-text">Salvar Evento<i aria-hidden="true" class="fa fa-download left">   </i></a></div>
+        </form>
       </div>
     </div>
     <footer class="page-footer purple darken-4">
@@ -84,20 +63,8 @@
         //Tooltips
         $('.tooltipped').tooltip({delay: 50});
         
-        //Confirmar
-        $(function() {
-            $('.confirmar').click(function(e) {
-                e.preventDefault();
-                if (window.confirm("Você tem certeza?")) {
-                    location.href = this.href;
-                }
-            });
-        });
-        
         //select_initializer
-        $(document).ready(function() {
-          $('select').material_select();
-        });
+        $('select').material_select();
         
         //datepicker
         $('.datepicker').pickadate({
@@ -168,6 +135,9 @@
         $(calendarioRevisaoInicial).on("change",function(){
           configurarCalendario(calendarioRevisaoInicial, calendarioRevisaoFinal);
         });
+        
+        //Inicialização do Modal excluir Evento
+        $('.modal-trigger').leanModal();
         
       });
     </script>
