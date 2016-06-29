@@ -9,3 +9,13 @@ block conteudo
     include ../jade_componentes/admin_card_inativo.jade
     include ../jade_componentes/admin_card_inativo.jade
     include ../jade_componentes/admin_card_inativo.jade
+    
+    div#modal.modal.modal-fized-footer
+      div.modal-content
+        h4 Excluir Evento
+        p Tem certeza que quer excluir esse evento?
+      div.modal-footer
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+    
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)
