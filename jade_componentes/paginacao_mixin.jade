@@ -1,0 +1,19 @@
+mixin paginacao(totalDeItens, itensPorPagina)
+  - var totalDePaginas = Math.ceil(totalDeItens / itensPorPagina);
+    
+  div.center
+    - if(totalDePaginas > 1) {
+        ul.pagination
+          li.disabled
+            a(href="#")
+              i.material-icons chevron_left
+          li.active
+            a(href="#") 1
+          - for(index = 2; index <= totalDePaginas; index++){
+            li.waves-effect
+              a(href="#")= index
+          - }
+          li.waves-effect
+            a(href="#")
+              i.material-icons chevron_right
+    - }

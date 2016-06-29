@@ -24,16 +24,53 @@
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="admin_ativos.html">Eventos Ativos</a><a href="admin_inativos.html">Eventos Inativos</a><a href="admin_novo.html">Adicionar Evento</a></div>
+      <div class="row opcoes"><a href="admin_lista_ativos.html">Eventos Ativos</a><a href="admin_lista_inativos.html">Eventos Inativos</a><a href="admin_cadastrar.html">Adicionar Evento</a></div>
       <div class="row">
-        <h2>Adicionar Evento</h2>
-        <form class="col s6">
-          <div class="input-field col m8 s12">
-            <input id="nome_evento" type="text">
-            <label for="input_text">Nome do Evento</label>
+        <h2>Lista de Eventos Ativos</h2>
+        <div class="col m6 s12">
+          <div class="card">
+            <div class="card-content"><span class="card-title">Nome do Evento</span>
+              <p>Organizador: João da Silva Sauro</p>
+              <p>Visibilidade: Privado</p>
+            </div>
+            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
           </div>
-        </form>
-        <div class="row"><a class="waves-effect waves-light btn white-text">Salvar Evento<i aria-hidden="true" class="fa fa-upload left">   </i></a></div>
+        </div>
+        <div class="col m6 s12">
+          <div class="card">
+            <div class="card-content"><span class="card-title">Nome do Evento</span>
+              <p>Organizador: João da Silva Sauro</p>
+              <p>Visibilidade: Privado</p>
+            </div>
+            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
+          </div>
+        </div>
+        <div class="col m6 s12">
+          <div class="card">
+            <div class="card-content"><span class="card-title">Nome do Evento</span>
+              <p>Organizador: João da Silva Sauro</p>
+              <p>Visibilidade: Privado</p>
+            </div>
+            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
+          </div>
+        </div>
+        <div class="col m6 s12">
+          <div class="card">
+            <div class="card-content"><span class="card-title">Nome do Evento</span>
+              <p>Organizador: João da Silva Sauro</p>
+              <p>Visibilidade: Privado</p>
+            </div>
+            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
+          </div>
+        </div>
+                <div class="center">
+                  <ul class="pagination">
+                    <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="waves-effect"><a href="#">2</a></li>
+                    <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                  </ul>
+                </div>
       </div>
     </div>
     <footer class="page-footer purple darken-4">
@@ -55,15 +92,8 @@
         //Tooltips
         $('.tooltipped').tooltip({delay: 50});
         
-        //Confirmar
-        $(function() {
-            $('.confirmar').click(function(e) {
-                e.preventDefault();
-                if (window.confirm("Você tem certeza?")) {
-                    location.href = this.href;
-                }
-            });
-        });
+        //select_initializer
+        $('select').material_select();
         
         //datepicker
         $('.datepicker').pickadate({
@@ -134,6 +164,9 @@
         $(calendarioRevisaoInicial).on("change",function(){
           configurarCalendario(calendarioRevisaoInicial, calendarioRevisaoFinal);
         });
+        
+        //Inicialização do Modal excluir Evento
+        $('.modal-trigger').leanModal();
         
       });
     </script>
