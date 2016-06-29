@@ -24,7 +24,7 @@
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="admin_ativos.html">Eventos Ativos</a><a href="admin_inativos.html">Eventos Inativos</a><a href="admin_novo.html">Adicionar Evento</a></div>
+      <div class="row opcoes"><a href="admin_ativos.html">Eventos Ativos</a><a href="admin_inativos.html">Eventos Inativos</a><a href="admin_cadastrar.html">Adicionar Evento</a></div>
       <div class="row">
         <h2>Lista de Eventos Inativos</h2>
         <div class="col m6 s12">
@@ -92,6 +92,11 @@
                     location.href = this.href;
                 }
             });
+        });
+        
+        //select_initializer
+        $(document).ready(function() {
+          $('select').material_select();
         });
         
         //datepicker
