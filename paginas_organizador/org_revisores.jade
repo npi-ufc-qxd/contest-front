@@ -1,0 +1,45 @@
+//output:org_revisores.html, pretty:true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade  
+  div.row
+    h2 Revisores
+    
+    a.col.s2.offset-s10.btn.white-text.waves-effect.waves-light.modal-trigger(href="#modal") Revisor
+      i.fa.fa-plus.left
+    
+    div.row
+      h5 Revisores cadastrados
+      table.striped.centered.responsive-table
+        thead
+          tr
+            th Nome
+            th Trabalhos Atribuídos
+            th Ações
+        tbody
+          tr
+            td João da Silva Sauro
+            td 0
+            td 
+              a(href="#") Remover Revisor
+          tr
+            td Marlene da Xuxa
+            td 2
+            td 
+              a.disabled(href="#") Remover Revisor
+  
+  div#modal.modal
+    div.modal-content
+      h4 Adicionar Revisor
+      form
+        div.input-field.col.m6.s6
+          input#nome_revisor(type="text")
+          label(for="nome_revisor") Nome do Revisor
+    div.modal-footer
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar
+          
+  div#paginacao
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)
+          
