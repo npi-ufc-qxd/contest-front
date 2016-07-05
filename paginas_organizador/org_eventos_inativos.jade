@@ -5,10 +5,14 @@ block conteudo
   div.row
     h2 Lista de Eventos Inativos
 
-    include ../jade_componentes/org_card_inativo.jade
-    include ../jade_componentes/org_card_inativo.jade
-    include ../jade_componentes/org_card_inativo.jade
-    include ../jade_componentes/org_card_inativo.jade
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+      
+    div
+      include ../jade_componentes/org_card_inativo.jade
+      include ../jade_componentes/org_card_inativo.jade
+      include ../jade_componentes/org_card_inativo.jade
+      include ../jade_componentes/org_card_inativo.jade
     
     include ../jade_componentes/paginacao_mixin.jade
     +paginacao(11, 10)

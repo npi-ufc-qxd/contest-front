@@ -5,6 +5,9 @@ block conteudo
   div.row
     h2 Adicionar Evento
     
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+      
     form.col.s12
       div.input-field.col.m6.s6
         input#nome_evento(type="text")

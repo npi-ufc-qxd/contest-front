@@ -5,7 +5,7 @@ block conteudo
   div.row
     h2 Detalhes da Trilha : "Nome da Trilha"
   
-  div.chip.red.white-text "Mensagem de Erro"
+  div.row.chip.red.white-text#error_area "Mensagem de Erro"
     i.material-icons close
     
   div.row
@@ -14,7 +14,7 @@ block conteudo
         i.fa.fa-pencil.left(aria-hidden="true")
     div.input-field.col.m5.s5  
       a.waves-effect.waves-light.btn.white-text.modal-trigger(href="#modalExcluir") Excluir Trilha
-        i.fa.fa-plus.left(aria-hidden="true")         
+        i.fa.fa-trash.left(aria-hidden="true")         
       
   h4 Trabalhos inscritos nessa Trilha (3)
   
