@@ -1,4 +1,4 @@
-//output:admin_lista_inativos.html, pretty: true
+//output:admin_eventos_inativos.html, pretty: true
 extends admin_base.jade
 block conteudo
   include ../jade_componentes/admin_opcoes.jade  
@@ -16,7 +16,8 @@ block conteudo
     div#modal.modal
       div.modal-content
         h4 Excluir Evento
+        h5 "O Evento X" será excluído.
         p Tem certeza que quer excluir esse evento?
       div.modal-footer
         a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
-        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar

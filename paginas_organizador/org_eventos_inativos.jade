@@ -13,10 +13,11 @@ block conteudo
     include ../jade_componentes/paginacao_mixin.jade
     +paginacao(11, 10)
     
-    div#modal_ecluir_evento.modal
+    div#modal_excluir_evento.modal
       div.modal-content
         h4 Excluir Evento
-        p Tem certeza que quer excluir esse evento?
+        h5 "Evento X" será excluído.
+        p Tem certeza que deseja excluir esse evento?
       div.modal-footer
         a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
-        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar
