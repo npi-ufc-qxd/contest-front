@@ -1,7 +1,7 @@
 mixin paginacao(totalDeItens, itensPorPagina)
   - var totalDePaginas = Math.ceil(totalDeItens / itensPorPagina);
     
-  div.center
+  div.row.col.s12.center
     - if(totalDePaginas > 1) {
         ul.pagination
           li.disabled
