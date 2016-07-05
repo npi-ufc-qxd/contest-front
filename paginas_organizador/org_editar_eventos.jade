@@ -5,10 +5,12 @@ block conteudo
   div.row
     h2 Editando Dados do Evento
     
-    div.row.chip.red.white-text#error_area "Mensagem de Erro"
-      i.material-icons close
     
     form.col.s12
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+      
+      div.row  
       div.input-field.col.m8.s12
         input#nome_evento(type="text")
         label(for="nome_evento") Nome do Evento

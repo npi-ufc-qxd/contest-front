@@ -27,19 +27,21 @@
       <div class="row opcoes"><a href="admin_eventos_ativos.html">Eventos Ativos</a><a href="admin_eventos_inativos.html">Eventos Inativos</a><a href="admin_adicionar_eventos.html">Adicionar Evento</a></div>
       <div class="row">
         <h2>Adicionar Evento</h2>
-        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
         <form class="col s12">
-          <div class="input-field col m6 s6">
-            <input id="nome_evento" type="text">
-            <label for="input_text">Nome do Evento</label>
-          </div>
-          <div class="input-field col m6 s6">
-            <select id="pessoas_select" name="Pessoas">
-              <option value="" disabled selected>Selecione uma pessoa</option>
-              <option value="1">pessoa 1</option>
-              <option value="2">pessoa 2</option>
-            </select>
-            <label for="pessoas_select">Organizador do Evento</label>
+          <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+          <div class="col s12">
+            <div class="input-field col m6 s6">
+              <input id="nome_evento" type="text">
+              <label for="input_text">Nome do Evento</label>
+            </div>
+            <div class="input-field col m6 s6">
+              <select id="pessoas_select" name="Pessoas">
+                <option value="" disabled selected>Selecione uma pessoa</option>
+                <option value="1">pessoa 1</option>
+                <option value="2">pessoa 2</option>
+              </select>
+              <label for="pessoas_select">Organizador do Evento</label>
+            </div>
           </div>
           <div class="input-field col s4"><a class="waves-effect waves-light btn white-text">Salvar Evento<i aria-hidden="true" class="fa fa-download left">   </i></a></div>
         </form>
