@@ -1,0 +1,19 @@
+//output:admin_eventos_ativos.html, pretty: true
+extends admin_base.jade
+block conteudo
+  include ../jade_componentes/admin_opcoes.jade  
+  div.row
+    h2 Lista de Eventos Ativos
+      
+    div
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+      
+      div.col.s12
+        include ../jade_componentes/admin_card_ativo.jade
+        include ../jade_componentes/admin_card_ativo.jade
+        include ../jade_componentes/admin_card_ativo.jade
+        include ../jade_componentes/admin_card_ativo.jade
+
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)

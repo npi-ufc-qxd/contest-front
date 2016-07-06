@@ -24,53 +24,66 @@
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="admin_lista_ativos.html">Eventos Ativos</a><a href="admin_lista_inativos.html">Eventos Inativos</a><a href="admin_cadastrar.html">Adicionar Evento</a></div>
+      <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
       <div class="row">
-        <h2>Lista de Eventos Ativos</h2>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
+        <h2>Trilhas do Evento : "Nome do Evento"</h2>
+        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+        <form class="col s12">
+          <div class="row"></div>
+          <div class="input-field col m3 offset-m10 s6"> <a href="#modal" class="waves-effect waves-light btn white-text modal-trigger">Trilha<i aria-hidden="true" class="fa fa-plus left"> </i></a></div>
+          <div class="row">
+            <div class="input-field col m12 s6">
+              <table class="striped centered">
+                <thead>
+                  <tr> 
+                    <th>Trilha</th>
+                    <th>Trabalhos Enviados</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>             
+                  <tr>
+                    <td>Trilha Padrão</td>
+                    <td>0</td>
+                    <td> <a href="org_detalhes_trilha.html">Ver Trilha</a></td>
+                  </tr>
+                  <tr>
+                    <td>Trilha de lot</td>
+                    <td>2</td>
+                    <td> <a href="org_detalhes_trilha.html">Ver Trilha</a></td>
+                  </tr>
+                  <tr>
+                    <td>Trilha de hue</td>
+                    <td>2</td>
+                    <td> <a href="org_detalhes_trilha.html">Ver Trilha      </a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
           </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
+          <div id="paginacao">         
+                        <div class="row col s12 center">
+                          <ul class="pagination">
+                            <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li class="waves-effect"><a href="#">2</a></li>
+                            <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                          </ul>
+                        </div>
+          </div>
+        </form>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h4>Adicionar Trilha</h4>
+          <form>
+            <div class="input-field col m6 s6">
+              <input id="nome_da_trilha" type="text">
+              <label for="nome_da_trilha">Nome da Trilha</label>
             </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
-          </div>
+          </form>
         </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Inativar</a></div>
-          </div>
-        </div>
-                <div class="center">
-                  <ul class="pagination">
-                    <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li class="waves-effect"><a href="#">2</a></li>
-                    <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                  </ul>
-                </div>
+        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar            </a></div>
       </div>
     </div>
     <footer class="page-footer purple darken-4">

@@ -1,0 +1,29 @@
+//output:org_convidar_pessoas.html, pretty:true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade  
+  div.row
+    h2 Convidar Pessoa
+      
+    form.col.s12
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+    
+      div.input-field.col.m6.s6
+        input#nome_do_convidado(type="text")
+        label(for="nome_do_convidado") Nome do Convidado
+ 
+      div.input-field.col.m6.s6
+        input#email_do_convidado(type="text")
+        label(for="email_do_convidado") Email do Convidado    
+ 
+      div.input-field.col.m6.s6
+        select#funcoes_select(name='Funcoes')
+          option(value="" disabled selected) Selecione uma Função
+          option(value='1') Função 1
+          option(value='2') Função 2
+        label(for="funcoes_select") Função do Convidado
+  
+      div.input-field.col.s4
+        a.waves-effect.waves-light.btn.white-text Enviar Convite
+          i.fa.fa-envelope.left(aria-hidden="true")     

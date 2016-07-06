@@ -27,43 +27,46 @@
       <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
       <div class="row">
         <h2>Lista de Eventos Inativos</h2>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
+        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+        <div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-content"><span class="card-title">Nome do Evento</span>
+                <p>Organizador: João da Silva Sauro</p>
+                <p>Visibilidade: Privado</p>
+              </div>
+              <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
             </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
+          </div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-content"><span class="card-title">Nome do Evento</span>
+                <p>Organizador: João da Silva Sauro</p>
+                <p>Visibilidade: Privado</p>
+              </div>
+              <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
+            </div>
+          </div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-content"><span class="card-title">Nome do Evento</span>
+                <p>Organizador: João da Silva Sauro</p>
+                <p>Visibilidade: Privado</p>
+              </div>
+              <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
+            </div>
+          </div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-content"><span class="card-title">Nome do Evento</span>
+                <p>Organizador: João da Silva Sauro</p>
+                <p>Visibilidade: Privado</p>
+              </div>
+              <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
+            </div>
           </div>
         </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
-          </div>
-        </div>
-        <div class="col m6 s12">
-          <div class="card">
-            <div class="card-content"><span class="card-title">Nome do Evento</span>
-              <p>Organizador: João da Silva Sauro</p>
-              <p>Visibilidade: Privado</p>
-            </div>
-            <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light">Ativar</a><a href="org_editar_eventos.html" class="btn white-text waves-effect waves-light orange">Editar  </a><a href="#modal_excluir_evento" class="btn white-text waves-effect waves-light red confirmar modal-trigger">Excluir</a></div>
-          </div>
-        </div>
-                <div class="center">
+                <div class="row col s12 center">
                   <ul class="pagination">
                     <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
                     <li class="active"><a href="#">1</a></li>
@@ -71,12 +74,13 @@
                     <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
                   </ul>
                 </div>
-        <div id="modal_ecluir_evento" class="modal">
+        <div id="modal_excluir_evento" class="modal">
           <div class="modal-content">
             <h4>Excluir Evento</h4>
-            <p>Tem certeza que quer excluir esse evento?</p>
+            <h5>"Evento X" será excluído.</h5>
+            <p>Tem certeza que deseja excluir esse evento?</p>
           </div>
-          <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar</a></div>
+          <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Cancelar</a></div>
         </div>
       </div>
     </div>

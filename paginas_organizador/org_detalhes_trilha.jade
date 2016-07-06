@@ -1,0 +1,92 @@
+//output:org_detalhes_trilha.html, pretty:true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade
+  div.row
+    h2 Detalhes da Trilha : "Nome da Trilha"
+  
+  div.row.chip.red.white-text#error_area "Mensagem de Erro"
+    i.material-icons close
+    
+  div.row
+    div.input-field.col.m4.s5   
+      a.waves-effect.waves-light.btn.white-text.modal-trigger(href="#modalTrilha") Alterar nome da Trilha
+        i.fa.fa-pencil.left(aria-hidden="true")
+    div.input-field.col.m5.s5  
+      a.waves-effect.waves-light.btn.white-text.modal-trigger(href="#modalExcluir") Excluir Trilha
+        i.fa.fa-trash.left(aria-hidden="true")         
+      
+  h4 Trabalhos inscritos nessa Trilha (3)
+  
+  div.row
+    div.input-field.col.m12.s6
+      table.striped.centered
+        thead
+          tr 
+            th Trilha
+            th Aluno
+            th Revisado
+            th Revisor
+            th Detalhes
+        tbody              
+          tr
+            td Um middleware para cidades inteligentes baseados em nuvem
+            td Thiago Nogueira
+            td Não
+            td 
+              a.modal-trigger(href='#modalRevisor') Atribuir Revisor
+            td 
+              a(href='org_trabalho_detalhes.html') Ver detalhes
+        
+          tr
+            td Automação Residencial com AWS IoT 
+            td Zarathon Maia
+            td Sim
+            td 
+              a.modal-trigger(href='#modalRevisor') José Sarney
+            td 
+              a(href='org_trabalho_detalhes.html') Ver detalhes    
+
+          tr
+            td Uma proposta para testes automatizados em ambientes IoT
+            td Dilma Roussef
+            td Não
+            td 
+              a.modal-trigger(href='#modalRevisor') Atribuir Revisor
+            td 
+              a(href='org_trabalho_detalhes.html') Ver detalhes    
+              
+  div#paginacao          
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)     
+    
+  div#modalRevisor.modal
+    div.modal-content
+      h4 Selecione o Revisor desejado
+      form
+        div.input-field.col.m6.s6
+          input#nome_do_revisor(type="text")
+          label(for="nome_do_revisor") Nome do Revisor
+    div.modal-footer
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Atribuir
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Remover Revisor
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar  
+  
+  div#modalExcluir.modal
+    div.modal-content
+      h4 Excluir Trilha
+      p Tem certeza que quer excluir essa Trilha?
+    div.modal-footer
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar 
+      
+  div#modalTrilha.modal
+    div.modal-content
+      h4 Alterar nome da Trilha
+      form
+        div.input-field.col.m6.s6
+          input#nome_do_revisor(type="text")
+          label(for="nome_do_revisor") Nome da Trilha
+    div.modal-footer
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Alterar
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar

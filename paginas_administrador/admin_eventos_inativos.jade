@@ -1,0 +1,27 @@
+//output:admin_eventos_inativos.html, pretty: true
+extends admin_base.jade
+block conteudo
+  include ../jade_componentes/admin_opcoes.jade  
+  div.row
+    h2 Lista de Eventos Inativos
+
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+    
+    div  
+      include ../jade_componentes/admin_card_inativo.jade
+      include ../jade_componentes/admin_card_inativo.jade
+      include ../jade_componentes/admin_card_inativo.jade
+      include ../jade_componentes/admin_card_inativo.jade
+    
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)
+    
+    div#modal.modal
+      div.modal-content
+        h4 Excluir Evento
+        h5 "O Evento X" será excluído.
+        p Tem certeza que quer excluir esse evento?
+      div.modal-footer
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar
