@@ -1,0 +1,26 @@
+//output:revisor_eventos.html, pretty: true
+extends revisor_base.jade
+block conteudo
+  include ../jade_componentes/revisor_opcoes.jade  
+  div.row
+    h2 Lista de Eventos
+      
+    div
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+      
+    
+    div.row
+      div.input-field
+        input.col.s11#pesquisar(type="text")
+        label(for="pesquisar") Procurando um evento específico?
+        a.btn-floating.btn-large.waves-effect.waves-light
+          i.material-icons search
+    
+    div.row
+      include ../jade_componentes/revisor_card_evento.jade
+      include ../jade_componentes/revisor_card_evento.jade
+      include ../jade_componentes/revisor_card_evento.jade
+    
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)
