@@ -1,0 +1,42 @@
+//output:autor_enviar_trabalho_form.html, pretty:true
+extends autor_base.jade
+block conteudo
+
+    include ../jade_componentes/autor_opcoes.jade  
+     
+    div.row
+      h2 Enviar Trabalho - Nome do Evento
+        
+      form.col.s12
+        div.row.chip.red.white-text#error_area "Mensagem de Erro"
+          i.material-icons close
+      
+        div.input-field.col.m12.s12
+          input#titulo_do_trabalho(type="text")
+          label(for="titulo_do_trabalho") Titulo do Trabalho
+   
+        div.input-field.col.m6.s6
+          input#nome_do_orientador(type="text")
+          label(for="nome_do_orientador") Nome do Orientador
+          
+        div.input-field.col.m6.s6
+          input#email_do_orientador(type="text")
+          label(for="email_do_orientador") Email do Orientador      
+   
+        div.input-field.col.m6.s6
+          select#trilhas_select(name='Trilhas')
+            option(value="" disabled selected) Selecione uma das Trilhas no evento
+            option(value='1') Trilha 1
+            option(value='2') Trilha 2
+          label(for="funcoes_select") Trilha no Evento
+          
+        div.file-field.input-field.col.m6.s6
+            div.btn.right
+              span Escolher...
+              input(type="file").multiple
+            div.file-path-wrapper
+              input.file-path.validate(type="text")(placeholder="Selecione seu arquivo no formato .pdf")  
+    
+        div.input-field.col.s4
+          a.waves-effect.waves-light.btn.white-text Salvar Alterações
+            i.fa.fa-floppy-o.left(aria-hidden="true")         

@@ -1,0 +1,29 @@
+//output:autor_enviar_trabalho.html, pretty:true
+extends autor_base.jade
+block conteudo
+
+    include ../jade_componentes/autor_opcoes.jade  
+
+    div
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+     
+    div.row
+      div.col.m6.s4
+        h5 Nome do Eventos
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+          |ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+          |ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          | in voluptate velit 
+        
+        p Início da Submissão: 00/00/0000
+        p Fim da Submissão: 00/00/0000
+        p Início da Revisão: 00/00/0000
+        p Fim da Revisão: 00/00/0000
+
+      div.row
+        div.col.s6
+          h5 Você não enviou seu trabalho, clique no botão abaixo e não perca o prazo de submissão.  
+        div.col.s6.center
+          a.waves-effect.waves-light.btn.white-text Adicionar Trabalho
+            
