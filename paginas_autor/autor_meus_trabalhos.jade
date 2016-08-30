@@ -1,0 +1,21 @@
+//output:autor_meus_trabalhos.html, pretty:true
+extends autor_base.jade
+block conteudo
+  
+  include ../jade_componentes/autor_opcoes.jade  
+  
+  div
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+  
+  div.col.s12
+    include ../jade_componentes/autor_card_evento_reenviar_trabalho.jade
+    include ../jade_componentes/autor_card_evento_enviar_trabalho.jade
+    include ../jade_componentes/autor_card_evento_ver_revisao.jade
+    
+  include ../jade_componentes/paginacao_mixin.jade
+  +paginacao(11, 10)
+  
+  
+  
+    

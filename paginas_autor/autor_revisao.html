@@ -14,60 +14,107 @@
     <nav role="navigation" class="purple darken-4">
       <div class="nav-wrapper container"><a href="#"><img src="../imgs/logotipo_white.png" alt="Contest" width="200px"></a>
         <ul class="white-text right hide-on-med-and-down">
-          <li><a href="#">Link 01</a></li>
-          <li><a href="#">Link 02</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Link 01</a></li>
-          <li><a href="#">Link 02</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
         </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
+      <div class="row opcoes"><a href="autor_index.html">Eventos Ativos</a><a href="autor_meus_trabalhos.html">Meus Trabalhos</a><a href="../paginas_organizador/org_revisores.html">Revisores </a><a href="../paginas_organizador/org_trilhas.html">Trilhas </a></div>
+      <div>
+        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+      </div>
+      <h4>Revisão - Um Survey dos Principais Protocolos baseados em Árvore e em Malha para MANETs</h4>
       <div class="row">
-        <h2>"Nome da Trilha"</h2>
-      </div>
-      <div class="chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
-      <h4>Detalhes do Trabalho</h4>
-      <div class="row">
-        <div class="input-field col m12 s6">
-          <table class="striped centered">
-            <thead>
-              <tr> 
-                <th>Titulo</th>
-                <th>Aluno</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody>             
-              <tr>
-                <td>Um middleware para cidades inteligentes baseados em nuvem</td>
-                <td>Thiago Nogueira</td>
-                <td>                <a class="btn-floating red"><i class="material-icons">insert_chart</i></a><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a><a class="btn-floating green"><i class="material-icons">publish</i></a><a class="btn-floating blue"><i class="material-icons">attach_file    </i></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div id="modalExcluir" class="modal">
-        <div class="modal-content">
-          <h4>Excluir Trilha</h4>
-          <p>Tem certeza que quer excluir essa Trilha?</p>
-        </div>
-        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar </a></div>
-      </div>
-      <div id="modalTrilha" class="modal">
-        <div class="modal-content">
-          <h4>Alterar nome da Trilha</h4>
-          <form>
-            <div class="input-field col m6 s6">
-              <input id="nome_do_revisor" type="text">
-              <label for="nome_do_revisor">Nome da Trilha</label>
+        <div class="col m6 s6">
+          <div>
+            <h5>Originalidade:</h5>
+            <div class="progress">
+              <div style="width: 20%" class="determinate"></div>
             </div>
-          </form>
+            <p>
+              Tema atual e inovador, contribuição científica clara (quando tiver resultados),
+              abordagem ou solução inovadora.
+            </p>
+          </div>
+          <div>
+            <h5>Clareza:</h5>
+            <div class="progress">
+              <div style="width: 40%" class="determinate"></div>
+            </div>
+            <p>
+              Organização do texto, separação e ordenação das seções para os artigos, 
+              fluxo de ideias coerente, conclusões sobre o trabalho claras e possíveis 
+              dadas as premissas, bom uso de figuras/tabelas/exemplos.      
+            </p>
+          </div>
+          <div>
+            <h5>Relevância:</h5>
+            <div class="progress">
+              <div style="width: 60%" class="determinate"></div>
+            </div>
+            <p>Relevância do tema abordado no artigo ou resumo.</p>
+          </div>
+          <div>
+            <h5>Merito Técnico:</h5>
+            <div class="progress">
+              <div style="width: 80%" class="determinate"></div>
+            </div>
+            <p>
+              Motivação, fundamentação teórica, metodologia. Para trabalhos que apresentam 
+              resultados, avaliar a aquisição e conclusões acerca dos resultados encontrados.
+              Para trabalhos em andamento, avaliar os resultados esperados e o alcance dos 
+              resultados dado os objetivos de pesquisa e experimentos propostos.       
+            </p>
+          </div>
+          <div>
+            <h5>Qualidade do Texto:</h5>
+            <div class="progress">
+              <div style="width: 100%" class="determinate"></div>
+            </div>
+            <p>
+              Redação do texto adequada: respeito pelas normas, bibliografia, 
+              redação correta em Português/Inglês. Respeito pela formatação 
+              especificada pelo edital (tamanho de fonte, espaçamento, tamanho máximo e mínimo).
+            </p>
+          </div>
         </div>
-        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Alterar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar</a></div>
+        <div class="col m6 s6">
+          <div>
+            <h5>Relevância:</h5>
+            <input type="checkbox" id="filled-in-box" disabled="disabled" class="filled-in">
+            <label for="filled-in-box">Sim</label>
+            <input type="checkbox" id="filled-in-box" checked="checked" disabled="disabled" class="filled-in">
+            <label for="filled-in-box">Não  </label>
+            <p>Relevância do tema abordado no artigo ou resumo.</p>
+          </div>
+          <div>
+            <h5>Comentários do Revisor:</h5>
+            <p>
+              O artigo está muito bem escrito, bem claro e objetivo. No entanto, a contribuição 
+              do artigo baseia-se fortemente do resultado de outros trabalhos, já que durante o 
+              trabalho não foram realizadas simulações. Os resultados obtidos pelos autores da 
+              simulação podem ser explicado mais detalhadamente, visto que é a parte mais 
+              importante do artigo. No mais, a realização por parte do autor de simulações 
+              envolvendo os protocolos citados trariam grande valia a trabalho.
+            </p>
+          </div>
+          <div>
+            <h5>Avaliação geral:</h5>
+            <div class="progress">
+              <div style="width: 60%" class="determinate"></div>
+            </div>
+            <p>
+              Avaliação global do artigo. A nota final será obtida a partir dos quesitos: 
+              originalidade, mérito técnico, clareza, qualidade e relevância. A avaliação 
+              geral, assim como a auto-avaliação, servirá como critério para um eventual desempate.    
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="page-footer purple darken-4">
