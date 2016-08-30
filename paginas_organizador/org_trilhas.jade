@@ -42,14 +42,14 @@ block conteudo
         include ../jade_componentes/paginacao_mixin.jade
         +paginacao(11, 10)                            
       
-  div#modal.modal
-    div.modal-content
-      h4 Adicionar Trilha
-      form
+  form
+    div#modal.modal
+      div.modal-content
+        h4 Adicionar Trilha
         div.input-field.col.m6.s6
           input#nome_da_trilha(type="text")
           label(for="nome_da_trilha") Nome da Trilha
-    div.modal-footer
-      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
-      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar            
+      div.modal-footer
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar            
                     

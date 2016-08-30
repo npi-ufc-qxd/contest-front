@@ -14,67 +14,61 @@
     <nav role="navigation" class="purple darken-4">
       <div class="nav-wrapper container"><a href="#"><img src="../imgs/logotipo_white.png" alt="Contest" width="200px"></a>
         <ul class="white-text right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="#">Link 01</a></li>
+          <li><a href="#">Link 02</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="#">Link 01</a></li>
+          <li><a href="#">Link 02</a></li>
         </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
+      <div class="row opcoes"><a href="revisor_index.html">Eventos Ativos</a></div>
       <div class="row">
-        <h2>Revisores</h2>
-        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div><a href="#modal_adicionar_revisor" class="col s2 offset-s10 btn white-text waves-effect waves-light modal-trigger">Revisor<i class="fa fa-plus left"></i></a>
+        <h1>Nome do Evento</h1>
+        <h2>Lista de Artigos para Revisão</h2>
+        <div>
+          <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+        </div>
         <div class="row">
-          <h5>Revisores cadastrados</h5>
-          <table class="striped centered responsive-table">
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Trabalhos Atribuídos</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>João da Silva Sauro</td>
-                <td>0</td>
-                <td> <a href="#modal_excluir_revisor" class="modal-trigger">Remover Revisor</a></td>
-              </tr>
-              <tr>
-                <td>Marlene da Xuxa</td>
-                <td>2</td>
-                <td> <a href="#modal_excluir_revisor" class="disabled modal-trigger">Remover Revisor</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <form>
-        <div id="modal_adicionar_revisor" class="modal">
-          <div class="modal-content">
-            <h4>Adicionar Revisor
-              <div class="input-field col m6 s6">
-                <input id="nome_revisor" type="text">
-                <label for="nome_revisor">Nome do Revisor</label>
+          <div class="row">
+            <div class="card horizontal">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla 
+                  </p>
+                  <h5>Autor: João da Silva Sauro</h5>
+                  <h5>Orientador: Thiago Nogueira</h5>
+                </div>
+                <div class="card-action"><a href="revisor_artigo.html" class="btn white-text waves-effect waves-light btn-large">Revisado</a></div>
               </div>
-            </h4>
+            </div>
           </div>
-          <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Cancelar</a></div>
+          <div class="row">
+            <div class="card horizontal">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla 
+                  </p>
+                  <h5>Autor: João da Silva Sauro</h5>
+                  <h5>Orientador: Thiago Nogueira</h5>
+                </div>
+                <div class="card-action"><a href="revisor_artigo.html" class="btn white-text waves-effect waves-light btn-large">Revisar</a></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </form>
-      <div id="modal_excluir_revisor" class="modal">
-        <div class="modal-content">
-          <h4>Excluir Revisor</h4>
-          <h5>"Fulano de Tal" será excluído.</h5>
-          <p>Tem certeza que deseja excluir este revisor?</p>
-        </div>
-        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Cancelar        </a></div>
-      </div>
-      <div id="paginacao">
                 <div class="row col s12 center">
                   <ul class="pagination">
                     <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
