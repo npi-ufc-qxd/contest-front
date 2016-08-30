@@ -1,0 +1,38 @@
+//output:autor_index.html, pretty:true
+extends autor_base.jade
+block conteudo
+  
+  include ../jade_componentes/autor_opcoes.jade  
+  
+  div
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+  
+  div.row
+    div.col.s12
+      div.input-field.row
+        input.col.s11(placeholder="Procurando um evento especifico?")(id="first_name")(type="text").validate
+        a.btn-floating.btn-large.waves-effect.waves-light.right 
+          i.material-icons search
+
+            
+    
+  div.col.s12
+    include ../jade_componentes/autor_card_evento_participar.jade
+    include ../jade_componentes/autor_card_evento_participando.jade
+    include ../jade_componentes/autor_card_evento_participar.jade
+    
+  include ../jade_componentes/paginacao_mixin.jade
+  +paginacao(11, 10)
+  
+  div#modal.modal
+    div.modal-content
+      h4 Participar do Evento
+      h5 "Evento X".
+      p Tem certeza que quer participar deste evento?
+    div.modal-footer
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar
+  
+  
+    

@@ -27,6 +27,7 @@ block conteudo
             th Aluno
             th Revisado
             th Revisor
+            th Detalhes
         tbody              
           tr
             td Um middleware para cidades inteligentes baseados em nuvem
@@ -34,13 +35,17 @@ block conteudo
             td Não
             td 
               a.modal-trigger(href='#modalRevisor') Atribuir Revisor
+            td 
+              a(href='org_trabalho_detalhes.html') Ver detalhes
         
           tr
             td Automação Residencial com AWS IoT 
             td Zarathon Maia
             td Sim
             td 
-              a.modal-trigger(href='#modalRevisor') José Sarney  
+              a.modal-trigger(href='#modalRevisor') José Sarney
+            td 
+              a(href='org_trabalho_detalhes.html') Ver detalhes    
 
           tr
             td Uma proposta para testes automatizados em ambientes IoT
@@ -48,7 +53,8 @@ block conteudo
             td Não
             td 
               a.modal-trigger(href='#modalRevisor') Atribuir Revisor
- 
+            td 
+              a(href='org_trabalho_detalhes.html') Ver detalhes    
               
   div#paginacao          
     include ../jade_componentes/paginacao_mixin.jade
