@@ -1,0 +1,19 @@
+//output:org_detalhes_evento.html, pretty: true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade  
+  div.row
+    h2 Detalhes do Evento: Nome do Evento
+    
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nulla sem. Etiam finibus lorem vel ex interdum, id egestas arcu cursus. Pellentesque tempus, sapien sed laoreet dapibus, massa dolor eleifend nibh, nec eleifend ex eros ac lectus. Suspendisse mattis facilisis malesuada. Sed fermentum varius purus sed pellentesque. Curabitur semper vestibulum gravida. Nunc pellentesque semper viverra.
+
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+    
+    div
+      include ../jade_componentes/org_card_datas_evento.jade
+    
+    div
+      include ../jade_componentes/org_card_trilhas.jade
+      include ../jade_componentes/org_card_revisores.jade
+      include ../jade_componentes/org_card_trabalhos.jade
