@@ -1,0 +1,9 @@
+div.col.s6
+  div.card.horizontal.small
+    div.card-stacked
+      div.card-content
+        span.card-title Auto-Avaliação do Revisor
+        p Avaliação global do artigo. A nota final será obtida a partir dos quesitos: originalidade, mérito técnico, clareza, qualidade e relevância. A avaliação geral, assim como a auto-avaliação, servirá como critério para um eventual desempate.
+      div.card-action
+        include ../jade_componentes/revisor_combobox_mixin_auto_avaliacao.jade
+        +avaliacao()

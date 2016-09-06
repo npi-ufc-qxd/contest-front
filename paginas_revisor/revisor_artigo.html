@@ -14,12 +14,12 @@
     <nav role="navigation" class="purple darken-4">
       <div class="nav-wrapper container"><a href="#"><img src="../imgs/logotipo_white.png" alt="Contest" width="200px"></a>
         <ul class="white-text right hide-on-med-and-down">
-          <li><a href="#">Link 01</a></li>
-          <li><a href="#">Link 02</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Link 01</a></li>
-          <li><a href="#">Link 02</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
         </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
@@ -30,137 +30,181 @@
         <div>
           <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
         </div>
-        <div class="row">
+        <div>
           <div class="col s12 card">
-            <h5>Titulo do trabalho</h5>
-            <h5>Autor: Nome do Autor aqui</h5>
-            <h5>Orientador: Nome do Orientador aqui</h5>
+            <div class="card-content"><span class="card-title">Titulo do trabalho</span>
+              <p>Autor: Nome do Autor aqui</p>
+              <p>Orientador: Nome do Orientador aqui</p>
+            </div>
             <div class="card-action">
-              <button id="baixar-artigo" name="baixar-artigo" class="btn waves-effect waves-light white-text btn-large">Fazer Download do Artigo</button>
+              <button id="baixar-artigo" name="baixar-artigo" class="btn waves-effect waves-light white-text">Fazer Download do Artigo</button>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div>
           <h2>Revisão</h2>
           <form class="col s12">
             <div class="col s12 center">
               <input id="problema-formato-artigo" type="checkbox">
               <label for="problema-formato-artigo">Há problemas na formatação do artigo?</label>
             </div>
-            <div class="row">
-              <div class="col s6 card small">
-                <h5>Originalidade:</h5>
-                <p>Tema atual e inovador, contribuição científica clara (quando tiver resultados), abordagem ou solução inovadora.  </p>
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+            <div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Originalidade</span>
+                      <p>Tema atual e inovador, contribuição científica clara (quando tiver resultados), abordagem ou solução inovadora.</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="RUIM">RUIM</option>
+                                                <option value="FRACO">FRACO</option>
+                                                <option value="MEDIO">MEDIO</option>
+                                                <option value="BOM">BOM</option>
+                                                <option value="OTIMO">OTIMO</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card small">
-                <h5>Mérito Técnico:</h5>
-                <p>
-                  Motivação, fundamentação teórica, metodologia. Para trabalhos que apresentam 
-                  resultados, avaliar a aquisição e conclusões acerca dos resultados encontrados. 
-                  Para trabalhos em andamento, avaliar os resultados esperados e o alcance dos 
-                  resultados dado os objetivos de pesquisa e experimentos propostos.       
-                </p>
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Mérito Técnico</span>
+                      <p>Motivação, fundamentação teórica, metodologia. Para trabalhos que apresentam resultados, avaliar a aquisição e conclusões acerca dos resultados encontrados. Para trabalhos em andamento, avaliar os resultados esperados e o alcance dos resultados dado os objetivos de pesquisa e experimentos propostos.</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="RUIM">RUIM</option>
+                                                <option value="FRACO">FRACO</option>
+                                                <option value="MEDIO">MEDIO</option>
+                                                <option value="BOM">BOM</option>
+                                                <option value="OTIMO">OTIMO</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card small">
-                <h5>Clareza:</h5>
-                <p>
-                  Organização do texto, separação e ordenação das seções para os artigos, 
-                  fluxo de ideias coerente, conclusões sobre o trabalho claras e possíveis 
-                  dadas as premissas, bom uso de figuras/tabelas/exemplos.
-                </p>
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Clareza</span>
+                      <p>Organização do texto, separação e ordenação das seções para os artigos, fluxo de ideias coerente, conclusões sobre o trabalho claras e possíveis dadas as premissas, bom uso de figuras/tabelas/exemplos.</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="RUIM">RUIM</option>
+                                                <option value="FRACO">FRACO</option>
+                                                <option value="MEDIO">MEDIO</option>
+                                                <option value="BOM">BOM</option>
+                                                <option value="OTIMO">OTIMO</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card small">
-                <h5>Qualidade do Texto:</h5>
-                <p>Redação do texto adequada: respeito pelas normas, bibliografia, redação correta </p>em Português/Inglês. Respeito pela formatação especificada pelo edital 
-                (tamanho de fonte, espaçamento, tamanho máximo e mínimo). 
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Qualidade do Texto</span>
+                      <p>Redação do texto adequada: respeito pelas normas, bibliografia, redação correta em Português/Inglês. Respeito pela formatação especificada pelo edital (tamanho de fonte, espaçamento, tamanho máximo e mínimo).</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="RUIM">RUIM</option>
+                                                <option value="FRACO">FRACO</option>
+                                                <option value="MEDIO">MEDIO</option>
+                                                <option value="BOM">BOM</option>
+                                                <option value="OTIMO">OTIMO</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card">
-                <h5>Relevância:</h5>
-                <p>Relevância do tema abordado no artigo ou resumo.   </p>
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Relevancia</span>
+                      <p>Organização do texto, separação e ordenação das seções para os artigos, fluxo de ideias coerente, conclusões sobre o trabalho claras e possíveis dadas as premissas, bom uso de figuras/tabelas/exemplos.</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="RUIM">RUIM</option>
+                                                <option value="FRACO">FRACO</option>
+                                                <option value="MEDIO">MEDIO</option>
+                                                <option value="BOM">BOM</option>
+                                                <option value="OTIMO">OTIMO</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card">
-                <h5>Auto-Avaliação do Revisor:</h5>
-                <p>Qualificação do revisor em relação ao tema abordado. </p>
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Auto-Avaliação do Revisor</span>
+                      <p>Avaliação global do artigo. A nota final será obtida a partir dos quesitos: originalidade, mérito técnico, clareza, qualidade e relevância. A avaliação geral, assim como a auto-avaliação, servirá como critério para um eventual desempate.</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="Não Conhecedor">Não Conhecedor</option>
+                                                <option value="Conhecedor">Conhecedor</option>
+                                                <option value="Especialista">Especialista</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card small">
-                <h5>Avaliação geral: </h5>
-                <p>Avaliação global do artigo. A nota final será obtida a partir dos quesitos: originalidade, mérito técnico, clareza, qualidade e relevância. </p>A avaliação geral, assim como a auto-avaliação, servirá como critério para um eventual 
-                desempate.  
-                                <div class="input-field">
-                                  <select>
-                                    <option value="" disabled selected>Escolha uma opção.</option>
-                                    <option value="RUIM">RUIM</option>
-                                    <option value="FRACO">FRACO</option>
-                                    <option value="MEDIO">MEDIO</option>
-                                    <option value="BOM">BOM</option>
-                                    <option value="OTIMO">OTIMO</option>
-                                  </select>
-                                </div>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"><span class="card-title">Avaliação Geral</span>
+                      <p>Avaliação global do artigo. A nota final será obtida a partir dos quesitos: originalidade, mérito técnico, clareza, qualidade e relevância. A avaliação geral, assim como a auto-avaliação, servirá como critério para um eventual desempate.</p>
+                    </div>
+                    <div class="card-action">
+                                            <div class="input-field">
+                                              <select>
+                                                <option value="" disabled selected>Escolha uma opção.</option>
+                                                <option value="RUIM">RUIM</option>
+                                                <option value="FRACO">FRACO</option>
+                                                <option value="MEDIO">MEDIO</option>
+                                                <option value="BOM">BOM</option>
+                                                <option value="OTIMO">OTIMO</option>
+                                              </select>
+                                            </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 card small">
-                <div class="input-field">
-                  <textarea id="comentarios-para-autor" class="materialize-textarea"></textarea>
-                  <label for="comentarios-para-autor">Comentarios para os autores:</label>
+              <div class="col s6">
+                <div class="card horizontal small">
+                  <div class="card-stacked">
+                    <div class="card-content"></div>
+                    <div class="col s12">
+                      <div class="input-field">
+                        <textarea id="comentarios-para-autor" class="materialize-textarea"></textarea>
+                        <label for="comentarios-para-autor">Comentarios para os autores:</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col s6">
