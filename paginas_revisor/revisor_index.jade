@@ -24,3 +24,12 @@ block conteudo
     
     include ../jade_componentes/paginacao_mixin.jade
     +paginacao(11, 10)
+
+    div#modal.modal
+      div.modal-content
+        h4 Particpar do Evento
+        h5 Você irá particiár do evento "Nome do Evento".
+        p Tem certeza que quer participar desse evento?
+      div.modal-footer
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar

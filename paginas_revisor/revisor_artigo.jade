@@ -9,89 +9,39 @@ block conteudo
       div.row.chip.red.white-text#error_area "Mensagem de Erro"
         i.material-icons close
     
-    div.row
-        div.col.s12.card
-          h5 Titulo do trabalho
-          h5 Autor: Nome do Autor aqui
-          h5 Orientador: Nome do Orientador aqui
+    div
+      div.col.s12.card
+        div.card-content
+          span.card-title Titulo do trabalho
+          p Autor: Nome do Autor aqui
+          p Orientador: Nome do Orientador aqui
+        
+        div.card-action
+          button.btn.waves-effect.waves-light.white-text#baixar-artigo(name="baixar-artigo") Fazer Download do Artigo
+            i.fa.fa-download.left(aria-hidden="true")
           
-          div.card-action
-            button.btn.waves-effect.waves-light.white-text.btn-large#baixar-artigo(name="baixar-artigo") Fazer Download do Artigo
-      
-    
-    div.row
+    div
       h2 Revisão
       form.col.s12
+        
         div.col.s12.center
           input#problema-formato-artigo(type="checkbox")
           label(for="problema-formato-artigo") Há problemas na formatação do artigo?
-        div.row
-          div.col.s6.card.small
-              h5 Originalidade:
-              p Tema atual e inovador, contribuição científica clara (quando tiver resultados), abordagem ou solução inovadora.  
-                
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()
-          div.col.s6.card.small
-              h5 Mérito Técnico:
-              p Motivação, fundamentação teórica, metodologia. Para trabalhos que apresentam 
-                | resultados, avaliar a aquisição e conclusões acerca dos resultados encontrados. 
-                | Para trabalhos em andamento, avaliar os resultados esperados e o alcance dos 
-                | resultados dado os objetivos de pesquisa e experimentos propostos.       
-            
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()
-              
-          div.col.s6.card.small
-              h5 Clareza:
-              p Organização do texto, separação e ordenação das seções para os artigos, 
-                | fluxo de ideias coerente, conclusões sobre o trabalho claras e possíveis 
-                | dadas as premissas, bom uso de figuras/tabelas/exemplos.
-       
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()  
-          
-          div.col.s6.card.small
-              h5 Qualidade do Texto:
-              p Redação do texto adequada: respeito pelas normas, bibliografia, redação correta 
-              | em Português/Inglês. Respeito pela formatação especificada pelo edital 
-              | (tamanho de fonte, espaçamento, tamanho máximo e mínimo). 
-       
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()
-              
-          div.col.s6.card
-              h5 Relevância:
-              p Relevância do tema abordado no artigo ou resumo.   
-       
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()
-              
-          div.col.s6.card
-              h5 Auto-Avaliação do Revisor:
-              p Qualificação do revisor em relação ao tema abordado. 
-       
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()
-              
-          div.col.s6.card.small
-              h5 Avaliação geral: 
-              p Avaliação global do artigo. A nota final será obtida a partir dos quesitos: originalidade, mérito técnico, clareza, qualidade e relevância. 
-              | A avaliação geral, assim como a auto-avaliação, servirá como critério para um eventual 
-              | desempate.  
-       
-              include ../jade_componentes/revisor_combobox_mixin.jade
-              +avaliacao()
-          
-          div.col.s6.card.small
-              div.input-field
-                textarea.materialize-textarea#comentarios-para-autor
-                label(for="comentarios-para-autor") Comentarios para os autores:
         
-          div.col.s6
+        div
+          include ../jade_componentes/revisor_card_originalidade.jade
+          include ../jade_componentes/revisor_card_merito_tecnico.jade
+          include ../jade_componentes/revisor_card_clareza.jade
+          include ../jade_componentes/revisor_card_qualidade_do_texto.jade
+          include ../jade_componentes/revisor_card_relevancia.jade
+          include ../jade_componentes/revisor_card_auto_avaliacao.jade
+          include ../jade_componentes/revisor_card_avaliacao_geral.jade
+          include ../jade_componentes/revisor_card_comentarios.jade                        
+          
+          div.col.m6.s12
             input#indicar-artigo(type="checkbox")
             label(for="indicar-artigo") Você indicaria este trabalho para premiação dos melhores artigos?
 
-          div.col.s6
+          div.col.m6.s12
             button.btn.waves-effect.waves-light.white-text.btn-large#submit(type="submit" name="action") Enviar Revisão
               i.material-icons.right send
