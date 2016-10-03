@@ -8,28 +8,30 @@ block conteudo
     div.row.chip.red.white-text#error_area "Mensagem de Erro"
       i.material-icons close
     
-    a.col.s2.offset-s10.btn.white-text.waves-effect.waves-light.modal-trigger(href="#modal_adicionar_revisor") Revisor
-      i.fa.fa-plus.left
+    form.col.s12
+      div.row
+      div.input-field.col.m3.offset-m10  
+        a.waves-effect.waves-light.btn.white-text.modal-trigger(href="#modal_adicionar_revisor") Revisor
+          i.fa.fa-plus.left
     
-    div.row
-      h5 Revisores cadastrados
-      table.striped.centered.responsive-table
-        thead
-          tr
-            th Nome
-            th Trabalhos Atribuídos
-            th Ações
-        tbody
-          tr
-            td João da Silva Sauro
-            td 0
-            td 
-              a.modal-trigger(href="#modal_excluir_revisor") Remover Revisor
-          tr
-            td Marlene da Xuxa
-            td 2
-            td 
-              a.disabled.modal-trigger(href="#modal_excluir_revisor") Remover Revisor
+      div.row
+        table.striped.centered
+          thead
+            tr
+              th Nome
+              th Trabalhos Atribuídos
+              th Ações
+          tbody
+            tr
+              td João da Silva Sauro
+              td 0
+              td 
+                a.modal-trigger(href="#modal_excluir_revisor") Remover Revisor
+            tr
+              td Marlene da Xuxa
+              td 2
+              td 
+                a.disabled.modal-trigger(href="#modal_excluir_revisor") Remover Revisor
   
   div#modal_adicionar_revisor.modal
     div.modal-content

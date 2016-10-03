@@ -1,0 +1,30 @@
+//output:autor_reenviar_trabalho.html, pretty:true
+extends autor_base.jade
+block conteudo
+
+  include ../jade_componentes/autor_opcoes.jade  
+  
+  h2 Nome do Evento   
+  div
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+    
+        
+        
+  div.col.s12
+    include ../jade_componentes/autor_card_trabalho.jade
+    include ../jade_componentes/autor_card_trabalho.jade
+    include ../jade_componentes/autor_card_trabalho.jade
+    
+  include ../jade_componentes/paginacao_mixin.jade
+  +paginacao(11, 10)
+  
+  div#modal.modal
+    div.modal-content
+      h4 Reenviar Trabalho
+      h5 "Nome do trabalho".
+      p Tem certeza que quer participar reenviar este trabalho?
+    div.modal-footer
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar
+      

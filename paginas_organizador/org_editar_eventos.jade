@@ -15,15 +15,16 @@ block conteudo
         input#nome_evento(type="text")
         label(for="nome_evento") Nome do Evento
       
-      div.input-field.col.m4.s12
+      div.input-field.col.m4.s12(style="height: 60px")
         include ../jade_componentes/org_switch_mixin.jade
         +switch("Publico", "Privado", true)
-        
+         
       div.input-field.col.s12
         textarea#descricao_evento.materialize-textarea
         label(for="descricao_evento") Descrição do Evento
         
       div.row
+        
         include ../jade_componentes/org_datepicker_mixin.jade
         +calendario("Prazo de Submissão - Inicial", "prazo_submissao_inicial", true)
 

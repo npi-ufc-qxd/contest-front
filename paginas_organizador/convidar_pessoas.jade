@@ -5,19 +5,19 @@ block conteudo
   div.row
     h2 Convidar Pessoa
       
-    form.col.s12
+    form.col.m12.s12
       div.row.chip.red.white-text#error_area "Mensagem de Erro"
         i.material-icons close
     
-      div.input-field.col.m6.s6
+      div.input-field.col.m6.s12
         input#nome_do_convidado(type="text")
         label(for="nome_do_convidado") Nome do Convidado
  
-      div.input-field.col.m6.s6
+      div.input-field.col.m6.s12
         input#email_do_convidado(type="text")
         label(for="email_do_convidado") Email do Convidado    
  
-      div.input-field.col.m6.s6
+      div.input-field.col.m6.s12
         select#funcoes_select(name='Funcoes')
           option(value="" disabled selected) Selecione uma Função
           option(value='1') Função 1
