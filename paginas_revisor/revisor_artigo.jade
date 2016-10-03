@@ -1,0 +1,47 @@
+//output:revisor_artigo.html, pretty: true
+extends revisor_base.jade
+block conteudo
+  include ../jade_componentes/revisor_opcoes.jade  
+  div.row
+    h1 Nome do Evento
+          
+    div
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+    
+    div
+      div.col.s12.card
+        div.card-content
+          span.card-title Titulo do trabalho
+          p Autor: Nome do Autor aqui
+          p Orientador: Nome do Orientador aqui
+        
+        div.card-action
+          button.btn.waves-effect.waves-light.white-text#baixar-artigo(name="baixar-artigo") Fazer Download do Artigo
+            i.fa.fa-download.left(aria-hidden="true")
+          
+    div
+      h2 Revisão
+      form.col.s12
+        
+        div.col.s12.center
+          input#problema-formato-artigo(type="checkbox")
+          label(for="problema-formato-artigo") Há problemas na formatação do artigo?
+        
+        div
+          include ../jade_componentes/revisor_card_originalidade.jade
+          include ../jade_componentes/revisor_card_merito_tecnico.jade
+          include ../jade_componentes/revisor_card_clareza.jade
+          include ../jade_componentes/revisor_card_qualidade_do_texto.jade
+          include ../jade_componentes/revisor_card_relevancia.jade
+          include ../jade_componentes/revisor_card_auto_avaliacao.jade
+          include ../jade_componentes/revisor_card_avaliacao_geral.jade
+          include ../jade_componentes/revisor_card_comentarios.jade                        
+          
+          div.col.m6.s12
+            input#indicar-artigo(type="checkbox")
+            label(for="indicar-artigo") Você indicaria este trabalho para premiação dos melhores artigos?
+
+          div.col.m6.s12
+            button.btn.waves-effect.waves-light.white-text.btn-large#submit(type="submit" name="action") Enviar Revisão
+              i.material-icons.right send

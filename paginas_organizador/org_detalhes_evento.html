@@ -26,65 +26,73 @@
     <div class="container page"><br>
       <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
       <div class="row">
-        <h2>Trilhas do Evento : "Nome do Evento"</h2>
+        <h2>Detalhes do Evento: Nome do Evento</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nulla sem. Etiam finibus lorem vel ex interdum, id egestas arcu cursus. Pellentesque tempus, sapien sed laoreet dapibus, massa dolor eleifend nibh, nec eleifend ex eros ac lectus. Suspendisse mattis facilisis malesuada. Sed fermentum varius purus sed pellentesque. Curabitur semper vestibulum gravida. Nunc pellentesque semper viverra.</p>
         <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
-        <form class="col s12">
-          <div class="row"></div>
-          <div class="input-field col m3 offset-m10"> <a href="#modal" class="waves-effect waves-light btn white-text modal-trigger">Trilha<i aria-hidden="true" class="fa fa-plus left"> </i></a></div>
-          <div class="row">
-            <div class="input-field col m12 s12">
-              <table class="striped centered">
-                <thead>
-                  <tr> 
-                    <th>Trilha</th>
-                    <th>Trabalhos Enviados</th>
-                    <th>Ações</th>
-                  </tr>
-                </thead>
-                <tbody>             
-                  <tr>
-                    <td>Trilha Padrão</td>
-                    <td>0</td>
-                    <td> <a href="org_detalhes_trilha.html">Ver Trilha</a></td>
-                  </tr>
-                  <tr>
-                    <td>Trilha de lot</td>
-                    <td>2</td>
-                    <td> <a href="org_detalhes_trilha.html">Ver Trilha</a></td>
-                  </tr>
-                  <tr>
-                    <td>Trilha de hue</td>
-                    <td>2</td>
-                    <td> <a href="org_detalhes_trilha.html">Ver Trilha      </a></td>
-                  </tr>
-                </tbody>
-              </table>
+        <div>
+          <div class="col s12">
+            <div class="card horizontal">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <div class="row"><span class="card-title">Datas do Evento</span></div>
+                  <div class="row">
+                    <div class="col s3">
+                      <p>Prazo de Submissão - Inicio</p>
+                      <p>00/00/0000</p>
+                    </div>
+                    <div class="col s3">
+                      <p>Prazo de Submissão - Final</p>
+                      <p>00/00/0000</p>
+                    </div>
+                    <div class="col s3">
+                      <p>Prazo de Revisão - Inicio</p>
+                      <p>00/00/0000</p>
+                    </div>
+                    <div class="col s3">
+                      <p>Prazo de Revisão - Final</p>
+                      <p>00/00/0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div id="paginacao">         
-                        <div class="row col s12 center">
-                          <ul class="pagination">
-                            <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li class="waves-effect"><a href="#">2</a></li>
-                            <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                          </ul>
-                        </div>
-          </div>
-        </form>
-      </div>
-      <form>
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <h4>Adicionar Trilha</h4>
-            <div class="input-field col m6 s6">
-              <input id="nome_da_trilha" type="text">
-              <label for="nome_da_trilha">Nome da Trilha</label>
-            </div>
-          </div>
-          <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar            </a></div>
         </div>
-      </form>
+        <div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Trilhas do Evento</span>
+                  <p>Número de trilhas: 0</p>
+                </div>
+                <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Gerenciar Trilhas</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Revisores do Evento</span>
+                  <p>Número de trilhas: 0</p>
+                </div>
+                <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Gerenciar Revisores</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Trabalhos do Evento</span>
+                  <p>Número de trilhas: 0</p>
+                  <p>Número de trilhas: 0</p>
+                  <p>Número de trilhas: 0</p>
+                </div>
+                <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Gerenciar Trabalhos</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="page-footer purple darken-4">
       <div class="footer-copyright">

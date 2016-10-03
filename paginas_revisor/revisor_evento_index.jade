@@ -1,0 +1,19 @@
+//output:revisor_evento_index.html, pretty: true
+extends revisor_base.jade
+block conteudo
+  include ../jade_componentes/revisor_opcoes.jade  
+  div.row
+    h1 Nome do Evento
+    h2 Lista de Artigos para Revisão
+      
+    div
+      div.row.chip.red.white-text#error_area "Mensagem de Erro"
+        i.material-icons close
+    
+    div.row
+      include ../jade_componentes/revisor_card_artigo_revisado.jade
+      include ../jade_componentes/revisor_card_artigo_nao_revisado.jade
+      
+    
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)

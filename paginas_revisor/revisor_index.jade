@@ -1,4 +1,4 @@
-//output:revisor_eventos.html, pretty: true
+//output:revisor_index.html, pretty: true
 extends revisor_base.jade
 block conteudo
   include ../jade_componentes/revisor_opcoes.jade  
@@ -25,3 +25,12 @@ block conteudo
     
     include ../jade_componentes/paginacao_mixin.jade
     +paginacao(11, 10)
+
+    div#modal.modal
+      div.modal-content
+        h4 Particpar do Evento
+        h5 Você irá particiár do evento "Nome do Evento".
+        p Tem certeza que quer participar desse evento?
+      div.modal-footer
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar

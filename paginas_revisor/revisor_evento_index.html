@@ -14,77 +14,70 @@
     <nav role="navigation" class="purple darken-4">
       <div class="nav-wrapper container"><a href="#"><img src="../imgs/logotipo_white.png" alt="Contest" width="200px"></a>
         <ul class="white-text right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="#">Link 01</a></li>
+          <li><a href="#">Link 02</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="#">Link 01</a></li>
+          <li><a href="#">Link 02</a></li>
         </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
+      <div class="row opcoes"><a href="revisor_index.html">Eventos Ativos</a></div>
       <div class="row">
-        <h2>Trilhas do Evento : "Nome do Evento"</h2>
-        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
-        <form class="col s12">
-          <div class="row"></div>
-          <div class="input-field col m3 offset-m10"> <a href="#modal" class="waves-effect waves-light btn white-text modal-trigger">Trilha<i aria-hidden="true" class="fa fa-plus left"> </i></a></div>
-          <div class="row">
-            <div class="input-field col m12 s12">
-              <table class="striped centered">
-                <thead>
-                  <tr> 
-                    <th>Trilha</th>
-                    <th>Trabalhos Enviados</th>
-                    <th>Ações</th>
-                  </tr>
-                </thead>
-                <tbody>             
-                  <tr>
-                    <td>Trilha Padrão</td>
-                    <td>0</td>
-                    <td> <a href="org_detalhes_trilha.html">Ver Trilha</a></td>
-                  </tr>
-                  <tr>
-                    <td>Trilha de lot</td>
-                    <td>2</td>
-                    <td> <a href="org_detalhes_trilha.html">Ver Trilha</a></td>
-                  </tr>
-                  <tr>
-                    <td>Trilha de hue</td>
-                    <td>2</td>
-                    <td> <a href="org_detalhes_trilha.html">Ver Trilha      </a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div id="paginacao">         
-                        <div class="row col s12 center">
-                          <ul class="pagination">
-                            <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li class="waves-effect"><a href="#">2</a></li>
-                            <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                          </ul>
-                        </div>
-          </div>
-        </form>
-      </div>
-      <form>
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <h4>Adicionar Trilha</h4>
-            <div class="input-field col m6 s6">
-              <input id="nome_da_trilha" type="text">
-              <label for="nome_da_trilha">Nome da Trilha</label>
-            </div>
-          </div>
-          <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar            </a></div>
+        <h1>Nome do Evento</h1>
+        <h2>Lista de Artigos para Revisão</h2>
+        <div>
+          <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
         </div>
-      </form>
+        <div class="row">
+          <div class="row">
+            <div class="card horizontal">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla 
+                  </p>
+                  <h5>Autor: João da Silva Sauro</h5>
+                  <h5>Orientador: Thiago Nogueira</h5>
+                </div>
+                <div class="card-action"><a href="revisor_artigo.html" class="btn white-text waves-effect waves-light btn-large">Revisado</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card horizontal">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla 
+                  </p>
+                  <h5>Autor: João da Silva Sauro</h5>
+                  <h5>Orientador: Thiago Nogueira</h5>
+                </div>
+                <div class="card-action"><a href="revisor_artigo.html" class="btn white-text waves-effect waves-light btn-large">Revisar</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="row col s12 center">
+                  <ul class="pagination">
+                    <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="waves-effect"><a href="#">2</a></li>
+                    <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                  </ul>
+                </div>
+      </div>
     </div>
     <footer class="page-footer purple darken-4">
       <div class="footer-copyright">

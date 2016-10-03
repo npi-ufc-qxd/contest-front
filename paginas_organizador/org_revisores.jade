@@ -33,16 +33,16 @@ block conteudo
               td 
                 a.disabled.modal-trigger(href="#modal_excluir_revisor") Remover Revisor
   
-  div#modal_adicionar_revisor.modal
-    div.modal-content
-      h4 Adicionar Revisor
-      form
-        div.input-field.col.m6.s6
-          input#nome_revisor(type="text")
-          label(for="nome_revisor") Nome do Revisor
-    div.modal-footer
-      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
-      a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar
+  form
+    div#modal_adicionar_revisor.modal
+      div.modal-content
+        h4 Adicionar Revisor
+          div.input-field.col.m6.s6
+            input#nome_revisor(type="text")
+            label(for="nome_revisor") Nome do Revisor
+      div.modal-footer
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Confirmar
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Cancelar
   
   div#modal_excluir_revisor.modal
     div.modal-content
