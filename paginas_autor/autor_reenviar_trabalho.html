@@ -24,92 +24,100 @@
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="revisor_index.html">Eventos Ativos</a></div>
-      <div class="row">
-        <h2>Lista de Eventos</h2>
-        <div>
-          <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
-        </div>
-        <div class="row">
-          <div class="col m12 s12">
-            <div class="input-field">
-              <input id="pesquisar" type="text" class="col m11 s9">
-              <label for="pesquisar">Procurando um evento específico?</label><a class="btn-floating btn-large waves-effect waves-light right"> <i class="material-icons">search</i></a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="row">
-            <div class="card horizontal">
-              <div class="card-stacked">
-                <div class="card-content"><span class="card-title">Nome do Evento</span>
-                  <p>
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla 
-                  </p>
-                  <h5>Início da Submissão: 00/00/0000</h5>
-                  <h5>Fim da Submissão: 00/00/0000</h5>
-                </div>
-                <div class="card-action"><a href="revisor_evento_index.html" class="waves-effect waves-light btn-large white-text">Ver Evento</a><a href="#modal" class="waves-effect waves-light btn-large white-text blue-grey modal-trigger">Participar</a></div>
+      <div class="row opcoes"><a href="autor_index.html">Eventos Ativos</a><a href="../paginas_organizador/org_meus_trabalhos.html">Meus Trabalhos</a><a href="../paginas_organizador/org_meus_eventos.html">Meus Eventos </a><a href="../paginas_organizador/org_revisores.html">Revisores </a></div>
+      <h2>Nome do Evento   </h2>
+      <div>
+        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+      </div>
+      <div class="col s12">
+        <div class="col s4">
+          <div class="card horizontal small">
+            <div class="card-stacked">
+              <div class="card-content"><span class="card-title">Titulo do Trabalho</span>
+                <p>Nome do Orientador</p>
+                <p>Email do Orientador</p>
+                <p>Trilha do Evento</p>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card horizontal">
-              <div class="card-stacked">
-                <div class="card-content"><span class="card-title">Nome do Evento</span>
-                  <p>
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla 
-                  </p>
-                  <h5>Início da Submissão: 00/00/0000</h5>
-                  <h5>Fim da Submissão: 00/00/0000</h5>
+              <div class="card-action">
+                <div class="row">
+                  <div class="file-field input-field col m6 s6">
+                    <div class="btn right"><span>Escolher...</span>
+                      <input type="file" class="multiple">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input type="text" placeholder="Selecione seu arquivo no formato .pdf" class="file-path validate">
+                    </div>
+                  </div>
+                  <div class="input-field col m6 s4"><a href="#modal" class="btn right white-text waves-effect waves-light confirmar modal-trigger">Reenviar</a></div>
                 </div>
-                <div class="card-action"><a href="revisor_evento_index.html" class="waves-effect waves-light btn-large white-text">Ver Evento</a><a href="#modal" class="waves-effect waves-light btn-large white-text blue-grey modal-trigger">Participar</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card horizontal">
-              <div class="card-stacked">
-                <div class="card-content"><span class="card-title">Nome do Evento</span>
-                  <p>
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla 
-                  </p>
-                  <h5>Início da Submissão: 00/00/0000</h5>
-                  <h5>Fim da Submissão: 00/00/0000</h5>
-                </div>
-                <div class="card-action"><a href="revisor_evento_index.html" class="waves-effect waves-light btn-large white-text">Ver Evento</a><a href="#modal" class="waves-effect waves-light btn-large white-text blue-grey modal-trigger">Participar</a></div>
               </div>
             </div>
           </div>
         </div>
-                <div class="row col s12 center">
-                  <ul class="pagination">
-                    <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li class="waves-effect"><a href="#">2</a></li>
-                    <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                  </ul>
+        <div class="col s4">
+          <div class="card horizontal small">
+            <div class="card-stacked">
+              <div class="card-content"><span class="card-title">Titulo do Trabalho</span>
+                <p>Nome do Orientador</p>
+                <p>Email do Orientador</p>
+                <p>Trilha do Evento</p>
+              </div>
+              <div class="card-action">
+                <div class="row">
+                  <div class="file-field input-field col m6 s6">
+                    <div class="btn right"><span>Escolher...</span>
+                      <input type="file" class="multiple">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input type="text" placeholder="Selecione seu arquivo no formato .pdf" class="file-path validate">
+                    </div>
+                  </div>
+                  <div class="input-field col m6 s4"><a href="#modal" class="btn right white-text waves-effect waves-light confirmar modal-trigger">Reenviar</a></div>
                 </div>
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <h4>Particpar do Evento</h4>
-            <h5>Você irá particiár do evento "Nome do Evento".</h5>
-            <p>Tem certeza que quer participar desse evento?</p>
+              </div>
+            </div>
           </div>
-          <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Cancelar</a></div>
         </div>
+        <div class="col s4">
+          <div class="card horizontal small">
+            <div class="card-stacked">
+              <div class="card-content"><span class="card-title">Titulo do Trabalho</span>
+                <p>Nome do Orientador</p>
+                <p>Email do Orientador</p>
+                <p>Trilha do Evento</p>
+              </div>
+              <div class="card-action">
+                <div class="row">
+                  <div class="file-field input-field col m6 s6">
+                    <div class="btn right"><span>Escolher...</span>
+                      <input type="file" class="multiple">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input type="text" placeholder="Selecione seu arquivo no formato .pdf" class="file-path validate">
+                    </div>
+                  </div>
+                  <div class="input-field col m6 s4"><a href="#modal" class="btn right white-text waves-effect waves-light confirmar modal-trigger">Reenviar</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="row col s12 center">
+              <ul class="pagination">
+                <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="waves-effect"><a href="#">2</a></li>
+                <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+              </ul>
+            </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h4>Reenviar Trabalho</h4>
+          <h5>"Nome do trabalho".</h5>
+          <p>Tem certeza que quer participar reenviar este trabalho?</p>
+        </div>
+        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Cancelar</a></div>
       </div>
     </div>
     <footer class="page-footer purple darken-4">

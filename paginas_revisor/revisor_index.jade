@@ -11,11 +11,12 @@ block conteudo
       
     
     div.row
-      div.input-field
-        input.col.s11#pesquisar(type="text")
-        label(for="pesquisar") Procurando um evento específico?
-        a.btn-floating.btn-large.waves-effect.waves-light
-          i.material-icons search
+      div.col.m12.s12
+        div.input-field
+          input.col.m11.s9#pesquisar(type="text")
+          label(for="pesquisar") Procurando um evento específico?
+          a.btn-floating.btn-large.waves-effect.waves-light.right 
+            i.material-icons search
     
     div.row
       include ../jade_componentes/revisor_card_evento.jade
