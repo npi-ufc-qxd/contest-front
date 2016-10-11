@@ -1,0 +1,48 @@
+//output:org_atribuir_revisores.html, pretty: true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade  
+  div.row
+    h2 Lista de Trabalhos
+
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+      
+    
+    div  
+      include ../jade_componentes/org_card_lista_trabalhos_comRevisor.jade
+      include ../jade_componentes/org_card_lista_trabalhos_comRevisor.jade
+      include ../jade_componentes/org_card_lista_trabalhos_maisDeUmRevisor.jade
+      include ../jade_componentes/org_card_lista_trabalhos_semRevisor.jade
+      include ../jade_componentes/org_card_lista_trabalhos_semRevisor.jade
+      include ../jade_componentes/org_card_lista_trabalhos_semRevisor.jade
+      
+
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)
+    
+    div#modalRevisor.modal
+      div.modal-content
+        h4.block Nome do Trabalho
+      
+        form
+          div.input-field.col.m6.s6
+            i.material-icons.large.prefix search
+            input#nome_do_revisor(type="text")
+            label(for="nome_do_revisor") Nome do Revisor
+            div.collection(id="listaRevisores")
+                include ../jade_componentes/org_lista_revisores.jade
+                include ../jade_componentes/org_lista_revisores.jade
+                include ../jade_componentes/org_lista_revisores.jade
+                include ../jade_componentes/org_lista_revisores.jade
+                include ../jade_componentes/org_lista_revisores.jade
+                include ../jade_componentes/org_lista_revisores.jade
+                
+              
+            
+          div.col.m6.s6
+            h5(id="listaEscolhidosTitulo") Revisores Selecionados
+            div.collection(id="listaEscolhidos")
+ 
+      div.modal-footer.block
+        a.modal-action.modal-close.waves-effect.btn-flat(href="#") Fechar  

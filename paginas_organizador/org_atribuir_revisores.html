@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Constest - Controle de Eventos de Submissão</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS-->
+    <link media="screen,projection" rel="stylesheet" href="../css/materialize.min.css">
+    <link media="screen,projection" rel="stylesheet" href="../css/font-awesome.min.css">
+    <link media="screen,projection" rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <nav role="navigation" class="purple darken-4">
+      <div class="nav-wrapper container"><a href="#"><img src="../imgs/logotipo_white.png" alt="Contest" width="200px"></a>
+        <ul class="white-text right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div class="container page"><br>
+      <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
+      <div class="row">
+        <h2>Lista de Trabalhos</h2>
+        <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
+        <div> 
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>Autor: João da Silva</p>
+                  <p>Orientador: Thiago Nogueira</p>
+                  <p>Revisores: Bruno Goes
+                    <div class="card-action"><a href="#modalRevisor" class="btn white-text waves-effect waves-light blue-grey modal-trigger">Revisor Alocado</a></div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>Autor: João da Silva</p>
+                  <p>Orientador: Thiago Nogueira</p>
+                  <p>Revisores: Bruno Goes
+                    <div class="card-action"><a href="#modalRevisor" class="btn white-text waves-effect waves-light blue-grey modal-trigger">Revisor Alocado</a></div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>Autor: João da Silva</p>
+                  <p>Orientador: Thiago Nogueira</p>
+                  <p>Revisores: Bruno Goes</p>
+                  <p>Revisores: Mohamed Mustafari
+                    <div class="card-action"><a href="#" class="btn white-text waves-effect waves-light blue-grey">Revisor Alocado</a></div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>Autor: João da Silva</p>
+                  <p>Orientador: Thiago Nogueira</p>
+                  <p>Revisor: Nenhum Revisor
+                    <div class="card-action"><a href="#modalRevisor" class="btn white-text waves-effect waves-light blue-green modal-trigger">Alocar Revisor</a></div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>Autor: João da Silva</p>
+                  <p>Orientador: Thiago Nogueira</p>
+                  <p>Revisor: Nenhum Revisor
+                    <div class="card-action"><a href="#modalRevisor" class="btn white-text waves-effect waves-light blue-green modal-trigger">Alocar Revisor</a></div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal small">
+              <div class="card-stacked">
+                <div class="card-content"><span class="card-title">Nome do Artigo</span>
+                  <p>Autor: João da Silva</p>
+                  <p>Orientador: Thiago Nogueira</p>
+                  <p>Revisor: Nenhum Revisor
+                    <div class="card-action"><a href="#modalRevisor" class="btn white-text waves-effect waves-light blue-green modal-trigger">Alocar Revisor</a></div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="row col s12 center">
+                  <ul class="pagination">
+                    <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="waves-effect"><a href="#">2</a></li>
+                    <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                  </ul>
+                </div>
+        <div id="modalRevisor" class="modal">
+          <div class="modal-content">
+            <h4 class="block">Nome do Trabalho</h4>
+            <form>
+              <div class="input-field col m6 s6"><i class="material-icons large prefix">search</i>
+                <input id="nome_do_revisor" type="text">
+                <label for="nome_do_revisor">Nome do Revisor</label>
+                <div id="listaRevisores" class="collection"><a id="1" onclick="add(this)" class="collection-item">Nome do Revisor <span data-position="bottom" data-delay="50" data-tooltip="Trabalhos Atribuidos a Esteve Revisor" class="title badge tooltipped">1</span></a><a id="1" onclick="add(this)" class="collection-item">Nome do Revisor <span data-position="bottom" data-delay="50" data-tooltip="Trabalhos Atribuidos a Esteve Revisor" class="title badge tooltipped">1</span></a><a id="1" onclick="add(this)" class="collection-item">Nome do Revisor <span data-position="bottom" data-delay="50" data-tooltip="Trabalhos Atribuidos a Esteve Revisor" class="title badge tooltipped">1</span></a><a id="1" onclick="add(this)" class="collection-item">Nome do Revisor <span data-position="bottom" data-delay="50" data-tooltip="Trabalhos Atribuidos a Esteve Revisor" class="title badge tooltipped">1</span></a><a id="1" onclick="add(this)" class="collection-item">Nome do Revisor <span data-position="bottom" data-delay="50" data-tooltip="Trabalhos Atribuidos a Esteve Revisor" class="title badge tooltipped">1</span></a><a id="1" onclick="add(this)" class="collection-item">Nome do Revisor <span data-position="bottom" data-delay="50" data-tooltip="Trabalhos Atribuidos a Esteve Revisor" class="title badge tooltipped">1</span></a></div>
+              </div>
+              <div class="col m6 s6">
+                <h5 id="listaEscolhidosTitulo">Revisores Selecionados</h5>
+                <div id="listaEscolhidos" class="collection"></div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer block"><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar  </a></div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer purple darken-4">
+      <div class="footer-copyright">
+        <div class="container"><a href="http://www.npi.quixada.ufc.br" class="white-text">Desenvolvido por NPI - Núcleo de Práticas em Informática</a></div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //Inicialização dos elementos no JS
+        //Parallax BG
+        $('.parallax').parallax();
+        
+        //Tooltips
+        $('.tooltipped').tooltip({delay: 50});
+        
+        //sideNav
+        $(".button-collapse").sideNav();
+        
+        //Tooltips
+        $('.tooltipped').tooltip({delay: 50});
+        
+        //select_initializer
+        $('select').material_select();
+        
+        $( "#listaRevisores" ).scroll(function() {
+        });
+        
+        add = function(e) {//vai receber o Objeto vindo da linkRevisor
+          var elemento = document.getElementById(e.id);
+          var listaescolhidos = document.getElementById("listaEscolhidos");
+          var cont = 0;
+          
+          for(var i = 0; i < listaescolhidos.children.length; i++){
+              if(listaescolhidos.children[i].id == e.id){ 
+              cont++
+              }
+          }
+          
+          if(cont != 0){
+            Materialize.toast('O mesmo revisor não pode ser alocado mais de uma vez no mesmo trabalho', 4000)
+          }else{
+            var a = elemento.cloneNode(true);
+            a.setAttribute('onclick','$(this).remove();');
+            document.getElementById("listaEscolhidos").appendChild(a);
+          }
+        }
+      
+         removerEl =function(){            
+          $(this).remove();	
+        };  
+        
+        
+        //datepicker
+        $('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15, // Creates a dropdown of 15 years to control year
+          //Persnonalizando nomes dos meses do ano
+          monthsFull: [ 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro' ],
+          //Persnonalizando nomes dos dias da semana
+          weekdaysFull: [ 'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado' ],
+          weekdaysShort: [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab' ],
+          weekdaysLetter: [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
+          today: 'Hoje',
+          clear: 'Limpar',
+          close: 'Fechar'
+        });
+        
+        //Trata as datas na tela org_editar_eventos 
+        var calendarioSubmissaoInicial = "#prazo_submissao_inicial";
+        var calendarioSubmissaoFinal = "#prazo_submissao_final";
+        var calendarioRevisaoInicial = "#prazo_revisao_inicial";
+        var calendarioRevisaoFinal = "#prazo_revisao_final";
+        
+        function habilitarCalendario(calendario){
+          $(calendario).removeAttr( "disabled" );
+        }
+        
+        function desabilitarCalendario(calendario){
+          $(calendario).attr( "disabled", true );
+          $(calendario).pickadate("clear");
+        }
+        
+        function definirDataMinimaCalendario(calendario, dataMin){
+          var picker = getPicker(calendario);
+          picker.set("min", dataMin);
+        }
+        
+        function getPicker(idCalendario){
+          var $input = $(idCalendario).pickadate();
+          var picker = $input.pickadate("picker");
+          return picker;
+        }
+        
+        function configurarCalendario(idCalendarioInicial, idCalendarioFinal){
+          var picker = getPicker(idCalendarioInicial);
+          var dataAtual = picker.get();
+          var umDia = 1;
+          
+          var dataMinima = new Date(dataAtual);
+          dataMinima.setDate(dataMinima.getDate()+umDia);
+                
+          if (dataAtual.length == 0) {
+            desabilitarCalendario(idCalendarioFinal);
+          } else {
+            habilitarCalendario(idCalendarioFinal);       
+            
+            definirDataMinimaCalendario(idCalendarioFinal, dataMinima);
+          }
+        }
+        
+        $(calendarioSubmissaoInicial).on("change",function(){
+          configurarCalendario(calendarioSubmissaoInicial, calendarioSubmissaoFinal);
+        });
+        
+        $(calendarioSubmissaoFinal).on("change",function(){
+          configurarCalendario(calendarioSubmissaoFinal, calendarioRevisaoInicial);
+        });
+        
+        $(calendarioRevisaoInicial).on("change",function(){
+          configurarCalendario(calendarioRevisaoInicial, calendarioRevisaoFinal);
+        });
+        
+        //Inicialização do Modal excluir Evento
+        $('.modal-trigger').leanModal();
+        
+      });
+    </script>
+  </body>
+</html>

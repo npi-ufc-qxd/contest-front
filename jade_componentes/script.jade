@@ -6,6 +6,9 @@ script(type="text/javascript").
     //Parallax BG
     $('.parallax').parallax();
     
+    //Tooltips
+    $('.tooltipped').tooltip({delay: 50});
+    
     //sideNav
     $(".button-collapse").sideNav();
     
@@ -14,6 +17,34 @@ script(type="text/javascript").
     
     //select_initializer
     $('select').material_select();
+    
+    $( "#listaRevisores" ).scroll(function() {
+    });
+    
+    add = function(e) {//vai receber o Objeto vindo da linkRevisor
+      var elemento = document.getElementById(e.id);
+      var listaescolhidos = document.getElementById("listaEscolhidos");
+      var cont = 0;
+      
+      for(var i = 0; i < listaescolhidos.children.length; i++){
+          if(listaescolhidos.children[i].id == e.id){ 
+          cont++
+          }
+      }
+      
+      if(cont != 0){
+        Materialize.toast('O mesmo revisor não pode ser alocado mais de uma vez no mesmo trabalho', 4000)
+      }else{
+        var a = elemento.cloneNode(true);
+        a.setAttribute('onclick','$(this).remove();');
+        document.getElementById("listaEscolhidos").appendChild(a);
+      }
+    }
+  
+     removerEl =function(){            
+      $(this).remove();	
+    };  
+    
     
     //datepicker
     $('.datepicker').pickadate({
