@@ -1,0 +1,19 @@
+//output:org_consideracoes_dos_revisores.html, pretty:true
+extends org_base.jade
+block conteudo
+  include ../jade_componentes/org_opcoes.jade  
+  
+  div
+    div.row.chip.red.white-text#error_area "Mensagem de Erro"
+      i.material-icons close
+  
+  h2 Considerações dos Revisores
+  
+  div.col.s12
+    include ../jade_componentes/org_card_consideracao_revisor.jade
+    include ../jade_componentes/org_card_consideracao_revisor.jade
+    include ../jade_componentes/org_card_consideracao_revisor.jade
+    
+  div#paginacao          
+    include ../jade_componentes/paginacao_mixin.jade
+    +paginacao(11, 10)     
