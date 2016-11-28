@@ -14,7 +14,24 @@ script(type="text/javascript").
     
     //select_initializer
     $('select').material_select();
+    //chips
+    $('.chips').material_chip();
     
+    $('.chips-initial').material_chip({
+      data: [{
+        tag: 'Internet das coisas',
+      }, {
+        tag: 'Requisistos',
+      }, {
+        tag: 'Arquitetura',
+      }],
+    });
+    
+    $('.chips-placeholder').material_chip({
+      placeholder: 'Enter a tag',
+      secondaryPlaceholder: '+Adicione sua área de interesse',
+    });
+
     //datepicker
     $('.datepicker').pickadate({
       selectMonths: true, // Creates a dropdown to control month
@@ -85,7 +102,7 @@ script(type="text/javascript").
       configurarCalendario(calendarioRevisaoInicial, calendarioRevisaoFinal);
     });
     
-    //Inicialização do Modal excluir Evento
-    $('.modal-trigger').leanModal();
+    //Incicialização nova do modal
+     $('.modal').modal();
     
   });

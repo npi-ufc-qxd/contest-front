@@ -1,0 +1,24 @@
+//output:revisor_perfil_editar.html, pretty:true
+extends revisor_base.jade
+block conteudo
+  include ../jade_componentes/revisor_opcoes.jade 
+  div.row
+    h2 Perfil
+    
+    div.col.s6.offset-s3
+      div.card
+        div.card-content.black-text
+          div.input-field.col.s12
+            p Nome:
+            input(value="Ze pequeno" id="first_name" type="text").validate
+          div.input-field.col.s12
+            p Email:
+            input(value="Zepequeno@cidadedeus.com" id="first_name" type="text").validate
+          
+          p(style="padding-left: 10px; padding-bottom: 10px;") Areas de interesse:
+          div.chips-initial
+            
+        div.card-action(style="text-align: right;")
+            a(href="#") Salvar
+                
+    

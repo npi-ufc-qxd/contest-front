@@ -24,94 +24,26 @@
       </div>
     </nav>
     <div class="container page"><br>
-      <div class="row opcoes"><a href="org_eventos_ativos.html">Eventos Ativos</a><a href="org_eventos_inativos.html">Eventos Inativos</a><a href="org_revisores.html">Revisores</a><a href="org_trilhas.html">Trilhas</a></div>
+      <div class="row opcoes"><a href="revisor_index.html">Eventos Ativos</a></div>
       <div class="row">
-        <h2>Detalhes da Trilha : "Nome da Trilha"</h2>
-      </div>
-      <div id="error_area" class="row chip red white-text">"Mensagem de Erro"<i class="material-icons">close</i></div>
-      <div class="row">
-        <div class="input-field col m4 s5">  <a href="#modalTrilha" class="waves-effect waves-light btn white-text">Alterar nome da Trilha<i aria-hidden="true" class="fa fa-pencil left"></i></a></div>
-        <div class="input-field col m5 s5"> <a href="#modalExcluir" class="waves-effect waves-light btn white-text">Excluir Trilha<i aria-hidden="true" class="fa fa-trash left">        </i></a></div>
-      </div>
-      <h4>Trabalhos inscritos nessa Trilha (3)</h4>
-      <div class="row">
-        <div class="input-field col m12 s12">
-          <table class="striped centered">
-            <thead>
-              <tr> 
-                <th>Trilha</th>
-                <th>Aluno</th>
-                <th>Revisado</th>
-                <th>Revisor</th>
-                <th>Detalhes</th>
-              </tr>
-            </thead>
-            <tbody>             
-              <tr>
-                <td>Um middleware para cidades inteligentes baseados em nuvem</td>
-                <td>Thiago Nogueira</td>
-                <td>Não</td>
-                <td> <a href="#modalRevisor">Atribuir Revisor</a></td>
-                <td> <a href="org_trabalho_detalhes.html">Ver detalhes</a></td>
-              </tr>
-              <tr>
-                <td>Automação Residencial com AWS IoT </td>
-                <td>Zarathon Maia</td>
-                <td>Sim</td>
-                <td> <a href="#modalRevisor">José Sarney</a></td>
-                <td> <a href="org_trabalho_detalhes.html">Ver detalhes    </a></td>
-              </tr>
-              <tr>
-                <td>Uma proposta para testes automatizados em ambientes IoT</td>
-                <td>Dilma Roussef</td>
-                <td>Não</td>
-                <td> <a href="#modalRevisor">Atribuir Revisor</a></td>
-                <td> <a href="org_trabalho_detalhes.html">Ver detalhes    </a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div id="paginacao">         
-                <div class="row col s12 center">
-                  <ul class="pagination">
-                    <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li class="waves-effect"><a href="#">2</a></li>
-                    <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                  </ul>
-                </div>
-      </div>
-      <div id="modalRevisor" class="modal">
-        <div class="modal-content">
-          <h4>Selecione o Revisor desejado</h4>
-          <form>
-            <div class="input-field col m6 s6">
-              <input id="nome_do_revisor" type="text">
-              <label for="nome_do_revisor">Nome do Revisor</label>
+        <h2>Perfil</h2>
+        <div class="col s6 offset-s3">
+          <div class="card">
+            <div class="card-content black-text">
+              <div class="input-field col s12">
+                <p>Nome:</p>
+                <input value="Ze pequeno" id="first_name" type="text" class="validate">
+              </div>
+              <div class="input-field col s12">
+                <p>Email:</p>
+                <input value="Zepequeno@cidadedeus.com" id="first_name" type="text" class="validate">
+              </div>
+              <p style="padding-left: 10px; padding-bottom: 10px;">Areas de interesse:</p>
+              <div class="chips-initial"></div>
             </div>
-          </form>
+            <div style="text-align: right;" class="card-action"><a href="#">Salvar</a></div>
+          </div>
         </div>
-        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Atribuir</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Remover Revisor</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar  </a></div>
-      </div>
-      <div id="modalExcluir" class="modal">
-        <div class="modal-content">
-          <h4>Excluir Trilha</h4>
-          <p>Tem certeza que quer excluir essa Trilha?</p>
-        </div>
-        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Confirmar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar </a></div>
-      </div>
-      <div id="modalTrilha" class="modal">
-        <div class="modal-content">
-          <h4>Alterar nome da Trilha</h4>
-          <form>
-            <div class="input-field col m6 s6">
-              <input id="nome_do_revisor" type="text">
-              <label for="nome_do_revisor">Nome da Trilha</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer"><a href="#" class="modal-action modal-close waves-effect btn-flat">Alterar</a><a href="#" class="modal-action modal-close waves-effect btn-flat">Fechar</a></div>
       </div>
     </div>
     <footer class="page-footer purple darken-4">
